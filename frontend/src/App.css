@@ -1,0 +1,135 @@
+
+.tab::-webkit-scrollbar {               /* for main page */
+    display: none
+}
+
+.container {
+    @apply flex flex-col gap-2.5;
+}
+
+.header {
+    @apply font-bold text-xl text-heading;
+}
+
+.base-style {
+    @apply bg-white rounded-2xl p-3 md:p-5 font-primary;
+}
+
+.status-success {
+    @apply bg-grn-gradient rounded-md text-black text-sm font-semibold text-center w-max p-1.5;
+}
+
+.status-error {
+    @apply bg-error-gradient rounded-md text-black text-sm font-semibold text-center w-max p-1.5;
+}
+
+.qty {
+    @apply text-center;
+}
+
+.appointment-success {
+    @apply grid grid-cols-dash-appointments items-center gap-2.5 bg-grn-gradient p-1.5 rounded-lg;
+}
+
+.appointment-error {
+    @apply grid grid-cols-dash-appointments items-center gap-2.5 bg-error-gradient p-1.5 rounded-lg;
+}
+
+.app-date {
+    @apply p-1.5 font-semibold text-center bg-gray-400 rounded-lg text-white;
+}
+
+.app-description {
+    @apply  text-lg;
+}
+
+/* login page */
+
+.auth-page {
+    @apply flex p-2 h-screen ;
+}
+
+.auth-form {
+    @apply flex flex-col gap-8 items-center justify-center w-full md:w-1/2;
+}
+
+.hero-text {
+    @apply font-semibold text-lg;
+}
+
+.auth-ul {
+    @apply flex flex-col gap-5 items-start;
+}
+
+.auth-ul li {
+    @apply flex flex-col gap-1 w-full;
+}
+
+label {
+    @apply font-semibold text-base ml-2.5;
+}
+
+.input {
+    @apply outline-none text-sm md:text-base w-full p-1.5 pl-2.5 rounded-md border border-black;
+}
+
+.input::placeholder {
+    @apply text-sm;
+}
+
+.auth-input-cont {
+    @apply relative flex flex-col gap-1;
+}
+
+.switchEye {
+    @apply absolute right-4 top-2.5;
+}
+
+.pass-info {
+    @apply text-sm text-orange-700 inline-flex items-center gap-0.5;
+}
+
+.auth-word-cont {
+    @apply text-sm md:text-base;
+}
+
+.auth-word {
+    @apply font-semibold cursor-pointer hover:opacity-70 transition-opacity ease-in-out duration-500;
+}
+
+.auth-btn {
+    @apply outline-none border border-black rounded-md p-1.5 font-semibold hover:cursor-pointer hover:bg-black hover:text-white transition-all duration-500 ease-in-out;
+}
+
+.nav-btn {
+    @apply outline-none text-xs lg:text-base border border-black rounded-md p-1.5 font-semibold hover:shadow-lg hover:cursor-pointer transition-all duration-500 ease-in-out;
+}
+
+.auth-img-part {
+    @apply hidden relative md:block w-1/2 h-full;
+}
+
+.auth-img-part img{
+    @apply w-full h-full object-cover object-center;
+}
+
+.p {
+    @apply absolute text-lg md:text-2xl text-black pt-5 w-full top-0 left-0 text-center font-bold;
+}
+
+
+.loading-div {
+    @apply  flex items-center justify-center z-10 absolute text-3xl h-full left-0 top-0 w-full backdrop-blur-sm;
+}
+
+.loading-effect {
+    @apply animate-spin;
+}
+
+.receive {
+    bottom: -30px;
+}
+
+.index {
+    z-index: 50;
+}

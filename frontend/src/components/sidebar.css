@@ -1,0 +1,16 @@
+.active {
+    @apply bg-gray-400 font-bold rounded-lg text-white;
+}
+
+.nav {
+    @apply flex gap-1.5 items-center cursor-pointer p-2 hover:bg-gray-200 hover:font-bold hover:rounded-lg;
+}
+
+
+.nav-item {
+    @apply font-semibold text-xl;
+}
+
+.icon {
+    @apply text-xl;
+}
